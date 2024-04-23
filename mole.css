@@ -1,9 +1,5 @@
-/* Your code here */
-
-
-
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-/* .sb {
+.sb {
   background-color: cornflowerblue;
   border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -12,17 +8,83 @@
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} */
+} 
 
-/* .sb__mole-counter {
+.sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-} */
+} 
 
-/* .sb__score-holder {
+.sb__score-holder {
   flex: 1 0 0;
-} */
+} 
 
-/* .sb__game-over--hidden {
+.sb__game-over--hidden {
   display: none;
-} */
+} 
+
+/* Your code here */
+/*
+.wgs{
+  position: relative;
+  display: inline-block;
+  height: 482px;
+  width: 640px;
+  overflow: hidden;
+}
+
+.wgs__mole-head{
+  position: absolute;
+  height: 356px;
+  width: 376px;
+  left: 109px;
+}
+
+.wgs__mole-hill{
+  position: absolute;
+  height: 220px;
+  width: 640px;
+  top: 262px;
+  
+}
+
+.wgs__mole-head--hidden{
+  margin-top: 482px;
+}
+*/
+.pf{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.wgs{
+  position: relative;
+  display: inline-block;
+  height: 241px;
+  width: 320px;
+  overflow: hidden;
+
+  &.wgs__mole-head{
+    position: absolute;
+    height: 178px;
+    width: 188px;
+    left: 54.5px;
+    transition: margin-top 0.25s;
+  }
+  
+  &.wgs__mole-hill{
+    position: absolute;
+    height: 110px;
+    width: 320px;
+    top: 131px;
+  }
+  
+  &.wgs__mole-head--hidden{
+    margin-top: 241px;
+  }
+
+  &.wgs__mole-head--whacked{
+    background-color: #645DED;
+  }
+}
+
